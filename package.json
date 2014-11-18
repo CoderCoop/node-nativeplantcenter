@@ -1,0 +1,27 @@
+{
+  "name": "node-nativeplantcenter",
+  "version": "0.0.0",
+  "description": "Read data from http://nativeplantcenter.net/",
+  "main": "./lib/nativeplantcenter.js",
+  "bin": {
+    "nativeplantcenter": "./bin/nativeplantcenter"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mchelen/node-nativeplantcenter.git"
+  },
+  "keywords": [
+    "nativeplants"
+  ],
+  "author": "Mike Chelen <michael.chelen@gmail.com> (https://github.com/mchelen/)",
+  "license": "CC0",
+  "bugs": {
+    "url": "https://github.com/mchelen/node-nativeplantcenter/issues"
+  },
+  "dependencies": {
+    "yql": "~1.0.2"
+  }
+}
