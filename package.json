@@ -1,6 +1,6 @@
 {
   "name": "node-nativeplantcenter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Read data from http://nativeplantcenter.net/",
   "main": "./lib/nativeplantcenter.js",
   "bin": {
