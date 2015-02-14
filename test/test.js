@@ -23,18 +23,12 @@ var baz = {
 describe('foo', function(){
   describe('#bar()', function(){
     it('do something', function(done){
-
       var foo = new npc();
-      
       foo.keyword("bittersweet",function(result){
-
         assert.equal(baz, result);
-
         done();
-
       });
-
-    });
-  });
-});
+    })
+  })
+})
 
