@@ -1,13 +1,30 @@
 var assert = require("assert"); // node.js core module
-
 var npc = require('../lib/nativeplantcenter');
-
 var util = require('util');
 
+var myNPC = new npc();
 
-var foo = new npc();
+describe('search function', function(){
+  describe('keyword()', function(){
+    it('keyword "bittersweet"', function(done){
+      myNPC.keyword("bittersweet",function(result){
+        assert.equal(JSON.stringify(goodResult,null,"  "), JSON.stringify(result,null,"  "));
+        done();
+      });
+    })
+  })
+})
 
-var baz = {
+describe('helper functions', function(){
+  describe('processSearchData()', function(){
+    it('should process data', function(){
+      assert.equal(JSON.stringify(goodResult,null,"  "), JSON.stringify(myNPC.processSearchData(goodInput),null,"  "));
+    })
+  })
+})
+
+
+var goodResult = {
   "237": {
   "url": "http://www.nativeplantcenter.net/?q=plants/237",
   "thumb": "http://www.nativeplantcenter.net/images/plants/vines/thumbs/Celastrus_scandens_1_PLANTS_TGB.jpg",
@@ -24,7 +41,7 @@ var baz = {
 };
 
 
-var qux = {
+var goodInput = {
   "div": {
     "class": "database_entry matrix_entry",
     "div": [
@@ -105,43 +122,3 @@ var qux = {
   }
 };
 
-
-
-
-
-describe('blah', function(){
-  describe('processSearchData()', function(){
-    it('should process data', function(){
-
-      var blerg = foo.processSearchData(qux);
-
-      console.log("\n\n\n baz \n"+util.inspect(baz, { depth: 10 }));
-
-      console.log("\n\n\n blerg \n"+util.inspect(blerg, { depth: 10 }));
-        
-
-      assert.equal(baz,blerg);
-        
-  //    console.log("\n\n baz"+JSON.stringify(baz,null,"  "));
-  //    console.log("\n\n blerg"+JSON.stringify(blerg,null,"  "));
-  //    assert.equal(JSON.stringify(baz,null,"  "), JSON.stringify(blerg,null,"  "));
-
-  //      assert.equal(5,6);
-  //      assert.equal(5,5);
-
-    })
-  })
-})
-
-/*
-describe('foo', function(){
-  describe('#bar()', function(){
-    it('do something', function(done){
-      foo.keyword("bittersweet",function(result){
-        assert.equal(baz, result);
-        done();
-      });
-    })
-  })
-})
-*/
