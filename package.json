@@ -7,7 +7,7 @@
     "nativeplantcenter": "./bin/nativeplantcenter"
   },
   "scripts": {
-    "test": "mocha test"
+    "test": "./node_modules/mocha/bin/mocha test"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   },
   "dependencies": {
     "yql": "~1.0.2"
+  },
+  "devDependencies": {
+    "mocha": "~2.1.0"
   }
 }
