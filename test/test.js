@@ -4,10 +4,10 @@ var util = require('util');
 
 var myNPC = new npc();
 
-describe('search function', function(){
-  describe('keyword()', function(){
-    it('keyword "bittersweet"', function(done){
-      myNPC.keyword("bittersweet",function(result){
+describe('search function', function() {
+  describe('keyword()', function() {
+    it('keyword "bittersweet"', function(done) {
+      myNPC.keyword("bittersweet",function(result) {
         assert.equal(JSON.stringify(goodResult,null,"  "), JSON.stringify(result,null,"  "));
         done();
       });
