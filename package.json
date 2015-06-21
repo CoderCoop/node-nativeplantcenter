@@ -26,6 +26,7 @@
     "jsonpath": "~0.1.7"
   },
   "devDependencies": {
-    "mocha": "~2.1.0"
+    "mocha": "~2.1.0",
+    "chai": "~3.0.0"
   }
 }
