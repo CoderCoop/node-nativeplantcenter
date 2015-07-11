@@ -6,9 +6,12 @@ var fs = require('fs');
 var lib = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
 
 var npc = require(lib+'/nativeplantcenter.js');
-var output = npc.keyword("bittersweet");
+var foo = new npc();
 
-console.log(JSON.stringify(output));
+foo.keyword("bittersweet", function(result) {
+  console.log(JSON.stringify(result,null,"  "));
+  
+});
 
 // heuchera
 // bittersweet
