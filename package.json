@@ -1,6 +1,6 @@
 {
   "name": "nativeplantcenter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Read data from http://nativeplantcenter.net/",
   "main": "./lib/nativeplantcenter.js",
   "scripts": {
