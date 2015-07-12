@@ -19,7 +19,7 @@
     "url": "https://github.com/mchelen/node-nativeplantcenter/issues"
   },
   "dependencies": {
-    "yql": "https://github.com/mchelen/node-yql/tarball/patch-1",
+    "yql": "https://github.com/mchelen/node-yql/tarball/patch-2",
     "jsonpath": "~0.1.7"
   },
   "devDependencies": {
