@@ -14,13 +14,14 @@
     "nativeplants"
   ],
   "author": "Mike Chelen <michael.chelen@gmail.com> (https://github.com/mchelen/)",
-  "license": "CC0",
+  "license": "CC0-1.0",
   "bugs": {
     "url": "https://github.com/mchelen/node-nativeplantcenter/issues"
   },
   "dependencies": {
-    "yql": "https://github.com/mchelen/node-yql/tarball/patch-1",
-    "jsonpath": "~0.1.7"
+    "jsonpath": "~0.1.7",
+    "request": "^2.58.0",
+    "yql": "https://github.com/mchelen/node-yql/tarball/patch-1"
   },
   "devDependencies": {
     "mocha": "~2.1.0",
