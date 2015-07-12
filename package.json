@@ -1,6 +1,6 @@
 {
   "name": "nativeplantcenter",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Read data from http://nativeplantcenter.net/",
   "main": "./lib/nativeplantcenter.js",
   "scripts": {
@@ -19,8 +19,11 @@
     "url": "https://github.com/mchelen/node-nativeplantcenter/issues"
   },
   "dependencies": {
-    "yql": "https://github.com/mchelen/node-yql/tarball/patch-2",
-    "jsonpath": "~0.1.7"
+    "jsonpath": "~0.1.7",
+    "xml2json": "^0.7.1",
+    "xmldom": "^0.1.19",
+    "xpath": "0.0.9",
+    "yql": "https://github.com/mchelen/node-yql/tarball/patch-2"
   },
   "devDependencies": {
     "mocha": "~2.1.0",
