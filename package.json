@@ -20,8 +20,7 @@
   },
   "dependencies": {
     "jsonpath": "~0.1.7",
-    "request": "^2.58.0",
-    "yql": "https://github.com/mchelen/node-yql/tarball/patch-1"
+    "request": "^2.58.0"
   },
   "devDependencies": {
     "mocha": "~2.1.0",
