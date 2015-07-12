@@ -1,0 +1,101 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.12.0
+3 info using node@v0.10.40
+4 verbose node symlink /usr/bin/node
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec { raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: '/home/mikechelen/doc/Dropbox/public/node-nativeplantcenter',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory /home/mikechelen/.npm/nativeplantcenter/0.1.2/package.tgz not in flight; packing
+10 verbose tar pack [ '/home/mikechelen/.npm/nativeplantcenter/0.1.2/package.tgz',
+10 verbose tar pack   '/home/mikechelen/doc/Dropbox/public/node-nativeplantcenter' ]
+11 verbose tarball /home/mikechelen/.npm/nativeplantcenter/0.1.2/package.tgz
+12 verbose folder /home/mikechelen/doc/Dropbox/public/node-nativeplantcenter
+13 info prepublish nativeplantcenter@0.1.2
+14 verbose addLocalTarball adding from inside cache /home/mikechelen/.npm/nativeplantcenter/0.1.2/package.tgz
+15 silly cache afterAdd nativeplantcenter@0.1.2
+16 verbose afterAdd /home/mikechelen/.npm/nativeplantcenter/0.1.2/package/package.json not in flight; writing
+17 verbose afterAdd /home/mikechelen/.npm/nativeplantcenter/0.1.2/package/package.json written
+18 silly publish { name: 'nativeplantcenter',
+18 silly publish   version: '0.1.2',
+18 silly publish   description: 'Read data from http://nativeplantcenter.net/',
+18 silly publish   main: './lib/nativeplantcenter.js',
+18 silly publish   scripts: { test: './node_modules/mocha/bin/mocha test' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git://github.com/mchelen/node-nativeplantcenter.git' },
+18 silly publish   keywords: [ 'nativeplants' ],
+18 silly publish   author:
+18 silly publish    { name: 'Mike Chelen',
+18 silly publish      email: 'michael.chelen@gmail.com',
+18 silly publish      url: 'https://github.com/mchelen/' },
+18 silly publish   license: 'CC0',
+18 silly publish   bugs: { url: 'https://github.com/mchelen/node-nativeplantcenter/issues' },
+18 silly publish   dependencies:
+18 silly publish    { xmldom: '^0.1.19',
+18 silly publish      xpath: '0.0.9',
+18 silly publish      yql: 'https://github.com/mchelen/node-yql/tarball/patch-2' },
+18 silly publish   devDependencies: { mocha: '~2.1.0', chai: '~3.0.0' },
+18 silly publish   readme: '[![Build Status](https://travis-ci.org/mchelen/node-nativeplantcenter.svg?branch=master)](https://travis-ci.org/mchelen/node-nativeplantcenter) [![npm version](https://badge.fury.io/js/nativeplantcenter.svg)](http://badge.fury.io/js/nativeplantcenter)\n\n\nnode-nativeplantcenter\n======================\n\nQueries <http://nativeplantcenter.net/> for data about native plants of the Chesapeake Bay.\n\n\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: '8f8b69143fda8830f7deb7964a6a999e52e16fdd',
+18 silly publish   homepage: 'https://github.com/mchelen/node-nativeplantcenter#readme',
+18 silly publish   _id: 'nativeplantcenter@0.1.2',
+18 silly publish   _shasum: 'eafe47db0e8d83f47b0cf0389a73cf9aa05d9c58',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name nativeplantcenter
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/nativeplantcenter
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /home/mikechelen/.npm/nativeplantcenter/0.1.2/package.tgz
+26 verbose request uri https://registry.npmjs.org/nativeplantcenter
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 17:32:58
+29 verbose request using bearer token for auth
+30 verbose request id 5936ec6cef7b2b4e
+31 http request PUT https://registry.npmjs.org/nativeplantcenter
+32 http 403 https://registry.npmjs.org/nativeplantcenter
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=60',
+33 verbose headers   'content-length': '95',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Sun, 12 Jul 2015 21:33:06 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-iad2132-IAD',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1436736785.301241,VS0,VE715' }
+34 verbose request invalidating /home/mikechelen/.npm/registry.npmjs.org/nativeplantcenter on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: "You cannot publish over the previously published version 0.1.2." : nativeplantcenter
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+36 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:197:22)
+36 verbose stack     at Request.emit (events.js:98:17)
+36 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1050:14)
+36 verbose stack     at Request.emit (events.js:117:20)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:996:12)
+36 verbose stack     at IncomingMessage.emit (events.js:117:20)
+36 verbose stack     at _stream_readable.js:944:16
+36 verbose stack     at process._tickCallback (node.js:448:13)
+37 verbose statusCode 403
+38 verbose pkgid nativeplantcenter
+39 verbose cwd /home/mikechelen/doc/Dropbox/public/node-nativeplantcenter
+40 error Linux 3.13.0-32-generic
+41 error argv "node" "/usr/local/bin/npm" "publish"
+42 error node v0.10.40
+43 error npm  v2.12.0
+44 error code E403
+45 error "You cannot publish over the previously published version 0.1.2." : nativeplantcenter
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
