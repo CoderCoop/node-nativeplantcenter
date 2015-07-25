@@ -23,17 +23,26 @@ npc.prototype.keyword = function(keyword, callback) {
   var url = util.format(url_template,encodeURIComponent(yql));
 
 
-/*
-example url:
-http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20html%20where%20url%3D%22http%3A%2F%2Fwww.nativeplantcenter.net%2F%3Fq%3Ddatabase%26count%3D-1%26keyword%3Ddivaricatus%22%20and%20xpath%3D'%2F%2Fdiv%5Bcontains(%40class%2C%22database_entry%20%20matrix_entry%22)%5D'&format=xml
-*/
-//console.log(url);
+  /*
+  example url:
+  http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20html%20where%20url%3D%22http%3A%2F%2Fwww.nativeplantcenter.net%2F%3Fq%3Ddatabase%26count%3D-1%26keyword%3Ddivaricatus%22%20and%20xpath%3D'%2F%2Fdiv%5Bcontains(%40class%2C%22database_entry%20%20matrix_entry%22)%5D'&format=xml
+  */
+  //console.log(url);
 
-  request(url, function (error, response, body) {
+  // don't use credentials 
+  var options = {
+    url: url,
+    withCredentials: false
+  };
+
+  // make the request
+  request(options, function (error, response, body) {
     if (!error && response.statusCode == 200) {
       callback(npc.prototype.processSearchData(body));  
     }
-  })
+  });
+  
+  
 
 };
 

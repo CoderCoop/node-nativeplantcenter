@@ -1,4 +1,4 @@
-var npc = require('../lib/nativeplantcenter');
+var npc = require('../nativeplantcenter');
 var foo = new npc();
 
 foo.keyword("divaricatus",function(result){

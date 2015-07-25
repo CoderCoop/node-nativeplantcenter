@@ -1,8 +1,8 @@
 {
   "name": "nativeplantcenter",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Read data from http://nativeplantcenter.net/",
-  "main": "./lib/nativeplantcenter.js",
+  "main": "./nativeplantcenter.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test"
   },

@@ -1,5 +1,5 @@
 var expect = require("chai").expect;
-var npc = require('../lib/nativeplantcenter');
+var npc = require('../nativeplantcenter');
 var util = require('util');
 
 var myNPC = new npc();
