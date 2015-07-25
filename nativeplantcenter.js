@@ -106,10 +106,11 @@ npc.prototype.processSearchData = function(data) {
       // get full image from thumbnail
       entry.img=entry.thumb.replace('thumbs/','');
       
-      // remove leading punctuation
+      // remove leading punctuation, fix spacing
       Object.keys(entry).forEach(function (key) {
         entry[key]=entry[key].replace(':  , ','');
         entry[key]=entry[key].replace(': ','');
+        entry[key]=entry[key].replace('  ',' ');
       });   
       
       // cleanup Common Names
