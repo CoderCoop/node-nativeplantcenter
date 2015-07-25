@@ -20,7 +20,7 @@ var goodResult = {
   "237": {
     "url": "http://www.nativeplantcenter.net/?q=plants/237",
     "thumb": "http://www.nativeplantcenter.net/images/plants/vines/thumbs/Celastrus_scandens_1_PLANTS_TGB.jpg",
-    "species": "Celastrus Scandens",
+    "species": "Celastrus scandens",
     "name": "American Bittersweet",
     "commonNames": "American Bittersweet",
     "plantTypes": "Vine",
