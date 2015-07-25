@@ -1,6 +1,6 @@
 {
   "name": "nativeplantcenter",
-  "version": "0.1.0",
+  "version": "0.1.7",
   "description": "Read data from http://nativeplantcenter.net/",
   "main": "./lib/nativeplantcenter.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mchelen/node-nativeplantcenter.git"
+    "url": "git://github.com/CoderCoop/node-nativeplantcenter.git"
   },
   "keywords": [
     "nativeplants"
@@ -16,7 +16,7 @@
   "author": "Mike Chelen <michael.chelen@gmail.com> (https://github.com/mchelen/)",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/mchelen/node-nativeplantcenter/issues"
+    "url": "https://github.com/CoderCoop/node-nativeplantcenter/issues"
   },
   "dependencies": {
     "request": "^2.58.0",
